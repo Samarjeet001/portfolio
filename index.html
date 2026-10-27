@@ -79,19 +79,19 @@ footer{padding:40px clamp(20px,5vw,64px) 48px;font-size:13px;color:var(--ink);op
 <canvas id="stars" aria-hidden="true"></canvas>
 <canvas id="gl" aria-hidden="true"></canvas>
 <canvas id="birds" aria-hidden="true"></canvas>
-<nav><b>Samarjeet Ghatge</b><div><a href="#about">About</a><a href="#work">Work</a><a href="#projects">Projects</a><a class="cvl" href="https://claude.ai/artifact/J6V5T7EQ8WZD5WuoCYRPQP#cv" target="_blank" rel="noopener">Resume</a><a href="#contact">Contact</a></div></nav>
+<nav><b>Samarjeet Ghatge</b><div><a href="#about">About</a><a href="#work">Work</a><a href="#projects">Projects</a><a href="https://drive.google.com/file/d/1ZBw8YVvgfEZbBxUDFPetM4baZIojPCVH/view?usp=sharing" target="_blank" rel="noopener">Resume</a><a href="#contact">Contact</a></div></nav>
 <main>
 <section id="hero">
 <h1>Samarjeet<br>Ghatge</h1>
-<p class="lead">I build Android apps and full-stack web applications.</p>
-<div class="cta"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a><a class="btn cvl" href="https://claude.ai/artifact/J6V5T7EQ8WZD5WuoCYRPQP#cv" target="_blank" rel="noopener">Resume</a></div>
+<p class="lead">I build Android apps and full-stack web products, from Kolhapur.</p>
+<div class="cta"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a><a class="btn" href="https://drive.google.com/file/d/1ZBw8YVvgfEZbBxUDFPetM4baZIojPCVH/view?usp=sharing" target="_blank" rel="noopener">Resume</a></div>
 <p class="hint">Drag to turn the lighthouse. Scroll to keep reading.</p>
 </section>
 
 <section id="about">
 <h2>About</h2>
 <div class="panel">
-<p>I’m a Computer Science graduate who likes turning everyday annoyances into small, well-built apps: a tracker for live crypto prices, a notes app that fixes your grammar, a mobile app that helps you control digital habits.</p>
+<p>I’m a Computer Science graduate who likes turning everyday annoyances into small, well-built apps: a tracker for live crypto prices, a notes app that fixes your grammar, a phone that helps you put it down.</p>
 <p>I work across Java and Android Studio on mobile, and the MERN stack on the web. I also edit video in After Effects and volunteered on the media team at my college Coding Club.</p>
 <div class="edu">
 <div><h3>B.Tech, Computer Science & Engineering</h3>D Y Patil College of Engineering & Technology, Kolhapur<br><small>Aug 2022 – May 2026 · CGPA 8.01</small></div>
@@ -145,7 +145,7 @@ footer{padding:40px clamp(20px,5vw,64px) 48px;font-size:13px;color:var(--ink);op
 <section id="contact">
 <h2>Let’s work together</h2>
 <a class="big" href="mailto:samarjeetghatge2004@gmail.com">samarjeetghatge2004@gmail.com</a>
-<div class="row"><a href="https://github.com/Samarjeet001" target="_blank" rel="noopener">GitHub</a><a class="resume" href="#contact">Download resume</a><a href="tel:+918766760032">+91 87667 60032</a><a href="https://www.linkedin.com/in/samarjeet-ghatge-1446682a6" target="_blank" rel="noopener">LinkedIn</a><span>Kolhapur, India</span></div>
+<div class="row"><a href="https://github.com/Samarjeet001" target="_blank" rel="noopener">GitHub</a><a href="https://drive.google.com/file/d/1ZBw8YVvgfEZbBxUDFPetM4baZIojPCVH/view?usp=sharing" target="_blank" rel="noopener">Resume</a><a href="tel:+918766760032">+91 87667 60032</a><a href="https://www.linkedin.com/in/samarjeet-ghatge-1446682a6" target="_blank" rel="noopener">LinkedIn</a><span>Kolhapur, India</span></div>
 </section>
 </main>
 <footer>3D model “Floating Lighthouse” by Kathrin&amp;Christian on Sketchfab, licensed CC BY 4.0.</footer>
@@ -252,7 +252,7 @@ addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd
 <script>
 (function(){
 var N='Samarjeet_Ghatge_Resume.pdf';
-if(location.protocol==='file:'){var base=location.href.split('#')[0];Array.prototype.forEach.call(document.querySelectorAll('a.cvl'),function(a){a.href=base+'#cv'});Array.prototype.forEach.call(document.querySelectorAll('a.home'),function(a){a.href=base;a.removeAttribute('target')})}
+if(location.protocol==='file:'||window.top===window){var base=location.href.split('#')[0];Array.prototype.forEach.call(document.querySelectorAll('a.cvl'),function(a){a.href=base+'#cv'});Array.prototype.forEach.call(document.querySelectorAll('a.home'),function(a){a.href=base;a.removeAttribute('target')})}
 function blob(){var b=atob(document.getElementById('cv').textContent.trim()),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return new Blob([u],{type:'application/pdf'})}
 function go(){var url=URL.createObjectURL(blob()),l=document.createElement('a');l.href=url;l.download=N;document.body.appendChild(l);l.click();l.remove();setTimeout(function(){URL.revokeObjectURL(url)},4000)}
 Array.prototype.forEach.call(document.querySelectorAll('.resume'),function(a){a.addEventListener('click',function(e){e.preventDefault();
